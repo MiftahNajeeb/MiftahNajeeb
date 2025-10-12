@@ -1,1 +1,715 @@
-<p>HELLO</p>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miftah Najeeb - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="PFP.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+              body {
+            background-color: #f4f4f7; /* Slightly darker background */
+            color: #4a5568; /* Darker text color (slate gray) */
+        }
+        /* Customizable Particle Styles */
+        #particles-js {
+            position: fixed; /* Fixed for parallax */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Behind other content */
+        }
+
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .skill-icon {
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+
+        .skill-icon:hover {
+            transform: scale(1.2); /* Scale up on hover */
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.7); /* Reduced navbar opacity */
+        }
+
+
+        /* Style for cards/boxes */
+        .bg-white {
+            background-color: #f7fafc; /* Off-white/light gray background */
+        }
+
+        /* Reduce contrast on other white elements */
+        .border-white {
+            border-color: #e2e8f0; /* Light gray border */
+        }
+
+        /* Adjust text colors as needed */
+        .text-white {
+            color: #e2e8f0; /* Lighter text color on dark backgrounds */
+        }
+        
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#2C3E50 ',    
+                        'secondary': '#34495E ',   
+                        'accent': '#7F8C8D ',      
+                        'background-highlight-1': '#7F8C8D', 
+                        'background-highlight-2': '#ECF0F1 ', 
+                        'dark': '#34495E ',      
+                    },
+                     fontFamily: {
+                        'roboto-mono': ['Roboto Mono', 'monospace'], // Add your font family
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-['Roboto_Mono']"> 
+                                <!-- Add font class here -->
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+<script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,  // Adjust the number of particles
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#38a169" // Slightly darker particle color
+                },
+                "shape": {
+                    "type": "circle", // You can use "circle", "edge", "triangle", "polygon", "star", "image"
+                    "stroke": {
+                        "width": 0,  // Set to 0 for no outline
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                },
+                "opacity": {
+                    "value": 0.4,   // Adjust opacity
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,  // Adjust particle size
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,  // Connect particles with lines
+                    "distance": 150,  // Adjust connection distance
+                    "color": "#4361EE", // Line color
+                    "opacity": 0.3,    // Line opacity
+                    "width": 1          // Line width
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,         // Adjust particle speed
+                    "direction": "none",
+                    "random": false,    // Random movement or not
+                    "straight": false,  // Straight or curved movement
+                    "out_mode": "out",   // Behavior when particles go off-screen
+                    "bounce": false,
+                    "attract": {        // Enable particle attraction/repulsion
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas", // Detect mouse interactions on the canvas
+                "events": {
+                    "onhover": {
+                        "enable": true,     // Enable hover effects
+                        "mode": "grab"    // "grab" to attract particles to the mouse
+                    },
+                    "onclick": {
+                        "enable": true,       // Enable click effects
+                        "mode": "push"     // "push" to emit new particles
+                    },
+                    "resize": true        // Resize the canvas with the window
+                },
+                "modes": {
+
+                    "grab": {          // Settings for the "grab" mode
+                        "distance": 200, // Distance from mouse to affect particles
+                        "line_linked": {
+                            "opacity": 1   // Opacity of lines when grabbing
+                        }
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+
+                }
+            },
+            "retina_detect": true // For high-resolution displays
+        });
+
+    </script>
+
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="#" class="text-2xl font-bold text-primary">MN</a>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-primary transition-colors">About</a>
+                    <a href="#experience" class="hover:text-primary transition-colors">Experience</a>
+                    <a href="#research" class="hover:text-primary transition-colors">Research</a>
+                    <a href="#awards" class="hover:text-primary transition-colors">Awards</a>
+                    <a href="#skills" class="hover:text-primary transition-colors">Skills</a>
+                    <a href="#certifications" class="hover:text-primary transition-colors">Certifications</a>
+                    <a href="#education" class="hover:text-primary transition-colors">Education</a>
+                </div>
+                <!-- Mobile menu button -->
+                <button id="menu-btn" class="md:hidden text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-8 mt-3 mb-4 text-center">
+                <a href="#about" class="hover:text-primary transition-colors">About</a>
+                <a href="#experience" class="hover:text-primary transition-colors">Experience</a>
+                <a href="#research" class="hover:text-primary transition-colors">Research</a>
+                <a href="#awards" class="hover:text-primary transition-colors">Awards</a>
+                <a href="#skills" class="hover:text-primary transition-colors">Skills</a>
+                <a href="#certifications" class="hover:text-primary transition-colors">Certifications</a>
+                <a href="#education" class="hover:text-primary transition-colors">Education</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <header class="pt-32 pb-16 bg-gradient-to-br from-primary to-secondary text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-5xl font-bold mb-4">Miftah Najeeb</h1>
+                    <p class="text-xl mb-8 text-gray-200">Game Developer & AI Engineer</p>
+                    <div class="flex gap-4 justify-center md:justify-start">
+                        <a href="mailto:miftah.najeeb@gmail.com" class="bg-white text-primary px-6 py-2 rounded-full hover:bg-gray-100 transition-colors">
+                            <i class="fas fa-envelope mr-2"></i>Email
+                        </a>
+                        <a href="tel:+218917490884" class="bg-white/10 text-white px-6 py-2 rounded-full hover:bg-white/20 transition-colors">
+                            <i class="fas fa-phone mr-2"></i>Phone
+                        </a>
+                        <a href="https://github.com/miftah-najeeb" target="_blank" class="bg-white/10 text-white px-6 py-2 rounded-full hover:bg-white/20 transition-colors">
+                            <i class="fab fa-github mr-2"></i>GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-12 md:mt-0">
+                    <img src="Image.png" alt="Profile" class="w-64 h-64 rounded-full border-4 border-white shadow-lg mx-auto"/>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="about" class="mb-20 ">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-center">
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">About Me</span>
+                </h2>
+            
+                <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+                    <!-- Left Column - Personal Info -->
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-2xl shadow-md p-8 transform hover:scale-105 transition-transform duration-300">
+                            <div class="flex items-center mb-4">
+                                <h3 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+                                    Game Developer & AI Engineer
+                                </h3>
+                            </div>
+                            <p class="text-gray-600 leading-relaxed mb-4">
+                                I'm Miftah, a passionate game developer and AI engineer with expertise in Unity/C# development and machine learning. I love creating immersive gaming experiences and developing AI solutions that solve real-world problems. From hyper-casual mobile games to advanced RAG systems, I bring creativity and technical excellence to every project.
+                            </p>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm">
+                                    <i class="fas fa-gamepad mr-2"></i>Game Developer
+                                </span>
+                                <span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm">
+                                    <i class="fas fa-brain mr-2"></i>AI Engineer
+                                </span>
+                                <span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm">
+                                    <i class="fas fa-robot mr-2"></i>Robotics Mentor
+                                </span>
+                            </div>
+                        </div>
+        
+                        <!-- Quote Card -->
+                        <div class="bg-gradient-to-r from-primary to-secondary rounded-2xl shadow-md p-8 text-white transform hover:scale-105 transition-transform duration-300">
+                            <i class="fas fa-quote-left text-4xl opacity-50 mb-4"></i>
+                            <p class="text-lg italic mb-4">
+                            "Building games and AI systems that make a difference - one line of code at a time."
+    
+                            </p>
+                            <p class="text-base font-medium ">- Miftah.</p>  
+                        </div>
+                    </div>
+                    <!-- Right Column - Stats & Highlights -->
+                    <div class="space-y-6">
+                        <!-- Quick Stats -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white rounded-xl shadow-md p-6 text-center transform hover:scale-105 transition-transform duration-300">
+                                <div class="text-4xl font-bold text-primary mb-2">5+</div>
+                                <div class="text-gray-600">Years of Experience</div>
+                            </div>
+                            <div class="bg-white rounded-xl shadow-md p-6 text-center transform hover:scale-105 transition-transform duration-300">
+                                <div class="text-4xl font-bold text-primary mb-2">15+</div>
+                                <div class="text-gray-600">Games Developed</div>
+                            </div>
+                            <div class="bg-white rounded-xl shadow-md p-6 text-center transform hover:scale-105 transition-transform duration-300">
+                                <div class="text-4xl font-bold text-primary mb-2">2</div>
+                                <div class="text-gray-600">Research Papers</div>
+                            </div>
+                            <div class="bg-white rounded-xl shadow-md p-6 text-center transform hover:scale-105 transition-transform duration-300">
+                                <div class="text-4xl font-bold text-primary mb-2">3</div>
+                                <div class="text-gray-600">Awards Won</div>
+                            </div>
+                        </div>
+        
+                     <!-- Key Highlights -->
+                <div class="bg-white rounded-2xl shadow-md p-8 transform hover:scale-105 transition-transform duration-300">
+                    <h4 class="text-xl font-semibold mb-4">🎯 Key Highlights</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-1">
+                                <i class="fas fa-award text-primary"></i>
+                            </div>
+                            <div>
+                                <span class="font-medium">Shield of Honor Winner</span>
+                                <p class="text-gray-600 text-sm">University of Benghazi robotics championships</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-1">
+                                <i class="fas fa-gamepad text-primary"></i>
+                            </div>
+                            <div>
+                                <span class="font-medium">Game Developer</span>
+                                <p class="text-gray-600 text-sm">15+ games across multiple platforms</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-1">
+                                <i class="fas fa-robot text-primary"></i>
+                            </div>
+                            <div>
+                                <span class="font-medium">Robotics Mentor</span>
+                                <p class="text-gray-600 text-sm">Led teams to international victories</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                    </div>
+                </div>
+        
+                <!-- Current Focus -->
+                <div class="mt-12 max-w-4xl mx-auto bg-white rounded-2xl shadow-md p-8 transform hover:scale-105 transition-transform duration-300">
+                    <h4 class="text-xl font-semibold mb-6 text-center">🎯 Current Focus</h4>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 ">
+                                <i class="fas fa-gamepad text-primary text-2xl"></i>
+                            </div>
+                            <h5 class="font-medium mb-2">Game Development</h5>
+                            <p class="text-gray-600 text-sm">Creating immersive gaming experiences with Unity</p>
+                        </div>     <div class="text-center">
+                            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-brain text-primary text-2xl"></i>
+                            </div>
+                            <h5 class="font-medium mb-2">AI Engineering</h5>
+                            <p class="text-gray-600 text-sm">Building RAG systems and AI solutions</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-robot text-primary text-2xl"></i>
+                            </div>
+                            <h5 class="font-medium mb-2">Robotics Mentoring</h5>
+                            <p class="text-gray-600 text-sm">Leading teams to international competitions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Work Experience</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-brain text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">AI & Data Team (AI Dashboards & RAG Systems)</h3>
+                            <p class="text-gray-500 mb-4">Tatweer Research | February 2025 - Present</p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Working on frontend development for AI-driven data dashboards and internal tools</li>
+                            <li>Developing chatbots powered by Retrieval-Augmented Generation (RAG) systems</li>
+                            <li>Collaborating with data engineers to optimize data structure and improve knowledge retrieval workflows</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-gamepad text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Game Developer</h3>
+                            <p class="text-gray-500 mb-4">Brainamics GmbH, Germany (Remote) | February 2025 - October 2025</p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                           <li>Developed hyper-casual and hybrid mobile games with rapid release cycles</li>
+                            <li>Built reusable Unity development tools and a structured prototyping pipeline to accelerate production</li>
+                            <li>Collaborated within a cross-functional team using data-driven iteration and automated build workflows</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-gamepad text-primary text-2xl"></i>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold">Game Developer</h3>
+                            <p class="text-gray-500 mb-4">RedLine Games, India (Remote) | 2023 - February 2025</p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Developed Unity/C# games with full gameplay pipeline ownership</li>
+                                <li>Delivered 1–1.5 playable prototypes monthly</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-store text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Founder and Owner</h3>
+                            <p class="text-gray-500 mb-4">Nightmare Online Store | 2021 - 2023</p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Gained extensive experience in business management, including overseeing operations</li>
+                                <li>Developed marketing strategies and customer engagement initiatives</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-laptop-code text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Software Department</h3>
+                            <p class="text-gray-500 mb-4">Arriada Group | 2022 - March 2023</p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Collaborated on software solutions, enhancing project management and communication abilities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-paint-brush text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Graphic Design and Advertising</h3>
+                            <p class="text-gray-500 mb-4">Elfagih Company | 2019 - 2021</p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Designed visually appealing marketing materials as part of the advertising team</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Experience Section -->
+        <section id="research" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Research Experience</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-brain text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">AI Engineer Intern</h3>
+                            <p class="text-gray-500 mb-4">Tatweer Research | 2024 - June 25</p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Developed AI solutions, including a chatbot and report summarizer for the Central Bank of Libya and Wahda Bank</li>
+                                <li>Worked with MLflow, OpenAI, and Power BI</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-file-alt text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Imbalanced Dataset Effect on CNN-Based Facial Recognition</h3>
+                            <p class="text-gray-500 mb-4">International Journal of Artificial Intelligence and Applications (IJAIA), Vol. 15, No. 1 | January 2024</p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Co-authored with Dr. Alhaam Alariyibi, focusing on dataset imbalance challenges in CNN-based facial recognition</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-search text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Developing and Evaluating Multi-Agent RAG System for Central Bank of Libya Financial Reports</h3>
+                            <p class="text-gray-500 mb-4">Accepted at Springer Nature | March 25</p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Co-authored with Tatweer AI Team. Designed and evaluated retrieval-augmented generation systems for financial analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section id="awards" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Awards & Academic Distinctions</h2>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-trophy text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Shield of Honor</h3>
+                            <p class="text-gray-500 mb-4">University of Benghazi | 2023</p>
+                            <p class="text-gray-600">Awarded for representing the university in robotics championships</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-medal text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Distinguished Trainer and Volunteer Award</h3>
+                            <p class="text-gray-500 mb-4">T.T.M | 2021</p>
+                            <p class="text-gray-600">For training children in programming</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                    <i class="fab fa-unity text-primary text-2xl mb-2"></i>
+                    <p>Unity/C#</p>
+                </div>       
+                 <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                    <i class="fas fa-gamepad text-primary text-2xl mb-2"></i>
+                    <p>Game Development</p>
+                </div>
+                <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                    <i class="fas fa-brain text-primary text-2xl mb-2"></i>
+                    <p>AI/ML</p>
+                </div>
+                <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                    <i class="fas fa-robot text-primary text-2xl mb-2"></i>
+                    <p>Robotics</p>
+                </div>
+                <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                    <i class="fab fa-python text-primary text-2xl mb-2"></i>
+                    <p>Python</p>
+                </div>
+                <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                    <i class="fas fa-paint-brush text-primary text-2xl mb-2"></i>
+                    <p>Graphic Design</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="mb-20 ">
+            <h2 class="text-3xl font-bold mb-8 text-center">Certifications</h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 ">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="bg-primary text-white p-4  ">
+                        <h3 class="text-xl font-semibold">VEX Robotics</h3>
+                    </div>
+                    <div class="p-6 ">
+                        <ul class="space-y-2 ">
+                            <li class="flex items-center ">
+                                <i class="fas fa-certificate text-primary mr-2"></i>
+                                VEX V5 Training Certification
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="bg-primary text-white p-4">
+                        <h3 class="text-xl font-semibold">BYTE</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-certificate text-primary mr-2"></i>
+                                Business Data Analytics Workshop (2024)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="bg-primary text-white p-4">
+                        <h3 class="text-xl font-semibold">University of Benghazi</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-certificate text-primary mr-2"></i>
+                                3D Design & Printing Certification
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="bg-primary text-white p-4">
+                        <h3 class="text-xl font-semibold">Google</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-certificate text-primary mr-2"></i>
+                                Flutter Bootcamp 2021
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Education</h2>
+            <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <div class="p-8">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">B.S. Computer Science</h3>
+                            <p class="text-gray-500">University of Benghazi, Benghazi, Libya</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mt-4">
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <p class="text-sm text-gray-500">GPA</p>
+                            <p class="text-xl font-semibold">3.22</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <p class="text-sm text-gray-500">Graduation Year</p>
+                            <p class="text-xl font-semibold">2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">© 2025 Miftah Najeeb. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="mailto:miftah.najeeb@gmail.com" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+                <a href="tel:+218917490884" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fas fa-phone text-xl"></i>
+                </a>
+                <a href="https://github.com/miftah-najeeb" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Toggle mobile menu
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            menuBtn.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+                console.log('Menu button clicked');
+            });
+        });
+
+    </script>
+</body>
+</html>
