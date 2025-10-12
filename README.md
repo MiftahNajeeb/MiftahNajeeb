@@ -19,4 +19,4 @@ Previously developed **hyper-casual games at Brainamics GmbH** and **rapid proto
 ### 📫 Reach Me
 **Email:** miftah.najeeb@gmail.com  
 **LinkedIn:** https://www.linkedin.com/in/miftah-najeeb/
-
+**Portfolio:** https://miftahnajeeb.github.io/MiftahNajeeb/
