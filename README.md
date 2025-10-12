@@ -2,7 +2,7 @@
 
 AI Engineer & Game Developer building **AI-driven systems, Unity tools, and data dashboards.**  
 Currently working at **Tatweer Research – AI & Data Team**, focusing on **RAG chatbots and frontend for AI dashboards.**  
-Previously developed **hyper-casual games at Brainamics GmbH** and **rapid prototypes at RedLine Games**.
+Previously developed **hyper-casual games at Brainamics GmbH** and **rapid prototypes at RedLine Games & Brainamics**.
 
 ### 🔧 What I Do
 - 🧠 AI Systems — RAG chatbots, data pipelines, ML tooling
