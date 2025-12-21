@@ -69,6 +69,11 @@
             color: #e2e8f0;
             /* Lighter text color on dark backgrounds */
         }
+
+        /* Grinta logo color filter for Stadium Owners app (teal: rgb(19, 176, 163)) */
+        .grinta-teal-filter {
+            filter: brightness(0.75) saturate(0.85) hue-rotate(15deg);
+        }
     </style>
 
     <script>
@@ -207,7 +212,7 @@
                     <div class="hidden md:flex items-center space-x-8">
                         <a href="#about" class="hover:text-primary transition-colors">About</a>
                         <a href="#games" class="hover:text-primary transition-colors">Games</a>
-                        <a href="#ai-apps" class="hover:text-primary transition-colors">AI Apps</a>
+                        <a href="#ai-apps" class="hover:text-primary transition-colors">Applications</a>
                         <a href="#experience" class="hover:text-primary transition-colors">Experience</a>
                         <a href="#research" class="hover:text-primary transition-colors">Research</a>
 
@@ -243,7 +248,7 @@
                 <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-8 mt-3 mb-4 text-center">
                     <a href="#about" class="hover:text-primary transition-colors">About</a>
                     <a href="#games" class="hover:text-primary transition-colors">Games</a>
-                    <a href="#ai-apps" class="hover:text-primary transition-colors">AI Apps</a>
+                    <a href="#ai-apps" class="hover:text-primary transition-colors">Applications</a>
                     <a href="#experience" class="hover:text-primary transition-colors">Experience</a>
                     <a href="#other-experience" class="hover:text-primary transition-colors">Other Experience</a>
                     <a href="#research" class="hover:text-primary transition-colors">Research</a>
@@ -260,7 +265,7 @@
                 <div class="flex flex-col md:flex-row items-center justify-between">
                     <div class="md:w-1/2 text-center md:text-left">
                         <h1 class="text-5xl font-bold mb-4">Miftah Najeeb</h1>
-                        <p class="text-xl mb-8 text-gray-200">Game Developer & AI Engineer</p>
+                        <p class="text-xl mb-8 text-gray-200">Game Developer & Software Developer</p>
                         <div class="flex gap-4 justify-center md:justify-start">
                             <a href="mailto:Miftah.najeeb@gmail.com"
                                 class="bg-white text-primary px-4 py-2 rounded-full hover:bg-gray-100 transition-colors">
@@ -304,13 +309,13 @@
                                 <div class="flex items-center mb-4">
                                     <h3
                                         class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-                                        Game Developer & AI Engineer
+                                        Game Developer & Software Developer
                                     </h3>
                                 </div>
                                 <p class="text-gray-600 leading-relaxed mb-4">
-                                    I'm Miftah, a passionate game developer and AI engineer with expertise in Unity/C#
+                                    I'm Miftah, a passionate game developer and software developer with expertise in Unity/C#
                                     development and machine learning. I love creating immersive gaming experiences and
-                                    developing AI solutions that solve real-world problems. From hyper-casual mobile
+                                    developing software solutions that solve real-world problems. From hyper-casual mobile
                                     games to advanced RAG systems, I bring creativity and technical excellence to every
                                     project.
                                 </p>
@@ -319,7 +324,7 @@
                                         <i class="fas fa-gamepad mr-2"></i>Game Developer
                                     </span>
                                     <span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm">
-                                        <i class="fas fa-brain mr-2"></i>AI Engineer
+                                        <i class="fas fa-code mr-2"></i>Software Developer
                                     </span>
                                     <span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm">
                                         <i class="fas fa-robot mr-2"></i>Robotics Mentor
@@ -335,7 +340,8 @@
                                 <div
                                     class="bg-white rounded-xl shadow-md p-6 text-center transform hover:scale-105 transition-transform duration-300">
                                     <div class="text-4xl font-bold text-primary mb-2">5+</div>
-                                    <div class="text-gray-600">Years of Experience</div>
+                                    <div class="text-gray-600 text-sm">Years of Experience</div>
+                                    <div class="text-gray-500 text-xs mt-1">+3 Game Dev, +2 Software Dev</div>
                                 </div>
                                 <div
                                     class="bg-white rounded-xl shadow-md p-6 text-center transform hover:scale-105 transition-transform duration-300">
@@ -413,8 +419,8 @@
                                     class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <i class="fas fa-brain text-primary text-2xl"></i>
                                 </div>
-                                <h5 class="font-medium mb-2">AI Engineering</h5>
-                                <p class="text-gray-600 text-sm">Building RAG systems and AI solutions</p>
+                                <h5 class="font-medium mb-2">Software Development</h5>
+                                <p class="text-gray-600 text-sm">Building full-stack applications and software solutions</p>
                             </div>
                             <div class="text-center">
                                 <div
@@ -624,29 +630,26 @@
                 </div>
             </section>
 
-            <!-- AI Apps Section -->
+            <!-- Applications Section -->
             <section id="ai-apps" class="mb-20">
                 <h2 class="text-3xl font-bold mb-12 text-center">
-                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">AI
-                        Applications</span>
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Applications</span>
                 </h2>
-                <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
                     <!-- AskLibya.ai -->
                     <div
-                        class="bg-white rounded-xl shadow-md p-8 text-center hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-                        <div class="w-28 h-28 flex items-center justify-center mx-auto mb-6">
+                        class="bg-white rounded-xl shadow-md p-5 text-center hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                        <div class="w-20 h-20 flex items-center justify-center mx-auto mb-4">
                             <img src="Applications Icons/AsjKibya.png" alt="AskLibya.ai"
                                 class="w-full h-full object-contain">
                         </div>
-                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">AskLibya.ai</h3>
-                        <p class="text-gray-600 mb-6 leading-relaxed">
-                            An AI-powered platform providing intelligent insights and information about Libya. Built
-                            with advanced natural language processing to answer questions and provide assistance related
-                            to Libyan culture, history, and current affairs.
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">AskLibya.ai</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                            An AI-powered platform providing intelligent insights about Libya with advanced natural language processing.
                         </p>
-                        <div class="space-y-3">
+                        <div class="space-y-2">
                             <a href="https://asklibya.ai" target="_blank"
-                                class="inline-block bg-primary text-white px-6 py-3 rounded-full hover:bg-secondary transition-colors">
+                                class="inline-block bg-primary text-white px-5 py-2 rounded-full hover:bg-secondary transition-colors text-sm">
                                 <i class="fas fa-external-link-alt mr-2"></i>Visit Platform
                             </a>
                             <div class="flex justify-center space-x-4 text-sm text-gray-500">
@@ -657,20 +660,102 @@
                         </div>
                     </div>
 
+                    <!-- Grinta - Players App -->
+                    <div
+                        class="bg-white rounded-xl shadow-md p-5 text-center hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                        <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <img src="grinta logo.svg" alt="Grinta Players App" class="w-full h-full object-contain">
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Grinta - Players App</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                            Flutter mobile app for players with Arabic RTL support, offline caching, and GetX state management. Developed as Technical Lead in a 4-person team.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="inline-block bg-gray-400 text-white px-5 py-2 rounded-full cursor-not-allowed text-sm">
+                                <i class="fas fa-clock mr-2"></i>Coming Soon
+                            </div>
+                            <div class="flex justify-center space-x-4 text-sm text-gray-500">
+                                <span><i class="fab fa-mobile-alt mr-1"></i>Flutter</span>
+                                <span><i class="fas fa-code mr-1"></i>Dart</span>
+                                <span><i class="fas fa-layer-group mr-1"></i>GetX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grinta - Stadium Owners App -->
+                    <div
+                        class="bg-white rounded-xl shadow-md p-5 text-center hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                        <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <img src="grinta logo.svg" alt="Grinta Stadium Owners App" class="w-full h-full object-contain" style="filter: brightness(0.87) saturate(0.9) hue-rotate(60deg);">
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Grinta - Stadium Owners App</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                            Flutter mobile app for stadium owners with role-based features, Arabic RTL support, and GetX state management. Developed as Technical Lead in a 4-person team.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="inline-block bg-gray-400 text-white px-5 py-2 rounded-full cursor-not-allowed text-sm">
+                                <i class="fas fa-clock mr-2"></i>Coming Soon
+                            </div>
+                            <div class="flex justify-center space-x-4 text-sm text-gray-500">
+                                <span><i class="fab fa-mobile-alt mr-1"></i>Flutter</span>
+                                <span><i class="fas fa-code mr-1"></i>Dart</span>
+                                <span><i class="fas fa-layer-group mr-1"></i>GetX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grinta - Admin Dashboard -->
+                    <div
+                        class="bg-white rounded-xl shadow-md p-5 text-center hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                        <div class="w-20 h-14 flex items-center justify-center mx-auto mb-4">
+                            <img src="grinta logo full.svg" alt="Grinta Admin Dashboard" class="w-full h-full object-contain">
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Grinta - Admin Dashboard</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                            Responsive React + Inertia.js admin dashboard for booking management, user moderation, and analytics. Developed as Technical Lead in a 4-person team.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="inline-block bg-gray-400 text-white px-5 py-2 rounded-full cursor-not-allowed text-sm">
+                                <i class="fas fa-clock mr-2"></i>Coming Soon
+                            </div>
+                            <div class="flex justify-center space-x-4 text-sm text-gray-500">
+                                <span><i class="fab fa-react mr-1"></i>React</span>
+                                <span><i class="fas fa-code mr-1"></i>Inertia.js</span>
+                                <span><i class="fas fa-chart-line mr-1"></i>Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grinta - Backend API -->
+                    <div
+                        class="bg-white rounded-xl shadow-md p-5 text-center hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                        <div class="w-20 h-14 flex items-center justify-center mx-auto mb-4">
+                            <img src="grinta logo full.svg" alt="Grinta Backend API" class="w-full h-full object-contain">
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Grinta - Backend API</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                            Laravel RESTful APIs with JWT authentication, OTP login, stadium bookings, subscriptions, and wallet transactions. Developed as Technical Lead in a 4-person team.
+                        </p>
+                        <div class="flex justify-center space-x-4 text-sm text-gray-500">
+                            <span><i class="fab fa-laravel mr-1"></i>Laravel</span>
+                            <span><i class="fas fa-key mr-1"></i>JWT</span>
+                            <span><i class="fas fa-database mr-1"></i>PostgreSQL</span>
+                        </div>
+                    </div>
+
                     <!-- Others -->
                     <div
-                        class="bg-white rounded-xl shadow-md p-8 text-center hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                        class="bg-white rounded-xl shadow-md p-5 text-center hover:shadow-lg transition-all duration-300 transform hover:scale-105">
                         <div
-                            class="w-24 h-24 bg-gradient-to-br from-gray-400 to-gray-600 rounded-xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                            <i class="fas fa-lock text-white text-3xl"></i>
+                            class="w-16 h-16 bg-gradient-to-br from-gray-400 to-gray-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                            <i class="fas fa-lock text-white text-2xl"></i>
                         </div>
-                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Others</h3>
-                        <p class="text-gray-600 mb-6 leading-relaxed">
-                            Additional AI and technology projects with sensitive information that cannot be disclosed
-                            publicly. These projects involve advanced AI implementations and innovative solutions.
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Others</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                            Additional AI and technology projects with sensitive information that cannot be disclosed publicly.
                         </p>
-                        <div class="space-y-3">
-                            <div class="inline-block bg-gray-500 text-white px-6 py-3 rounded-full cursor-not-allowed">
+                        <div class="space-y-2">
+                            <div class="inline-block bg-gray-500 text-white px-5 py-2 rounded-full cursor-not-allowed text-sm">
                                 <i class="fas fa-eye-slash mr-2"></i>Confidential
                             </div>
                             <div class="flex justify-center space-x-4 text-sm text-gray-500">
@@ -682,7 +767,6 @@
                     </div>
                 </div>
             </section>
-
 
             <!-- Experience Section -->
             <section id="experience" class="mb-20">
@@ -813,6 +897,32 @@
                 <h2 class="text-3xl font-bold mb-8 text-center">Other Relevant Experience</h2>
                 <div class="max-w-4xl mx-auto space-y-8">
                     <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
+                        <div class="flex flex-col md:flex-row items-start gap-6">
+                            <div class="w-full md:w-1/2">
+                                <div class="flex items-start gap-4 mb-4">
+                                    <div
+                                        class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-gavel text-primary text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-semibold">International Robotics Event Volunteer & Judge</h3>
+                                        <p class="text-gray-500 mb-4">Kansas University, USA | 2025</p>
+                                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                            <li>Volunteered at an international college-level robotics competition hosted at Kansas University</li>
+                                            <li>Contributed to event organization, technical evaluation, and judging processes</li>
+                                            <li>Collaborated with international teams and judges, gaining exposure to global competition standards, leadership practices, and cross-cultural teamwork</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+                                <img src="KU.jpg" alt="International Robotics Event Volunteer & Judge at Kansas University"
+                                    class="w-full max-w-sm object-cover rounded-lg shadow-md"
+                                    style="border: 2px solid #3B82F6; height: calc(20rem * 1.1);">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
                         <div class="flex items-start gap-4">
                             <div
                                 class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -909,7 +1019,7 @@
                                 <i class="fas fa-brain text-primary text-2xl"></i>
                             </div>
                             <div>
-                                <h3 class="text-xl font-semibold">AI Engineer Intern</h3>
+                                <h3 class="text-xl font-semibold">Software Developer Intern</h3>
                                 <p class="text-gray-500 mb-4">Tatweer Research | 2024 - June 25</p>
                                 <ul class="list-disc list-inside text-gray-600 space-y-2">
                                     <li>Developed AI solutions, including a chatbot and report summarizer for the
@@ -1086,6 +1196,42 @@
                         <i class="fas fa-share-alt text-primary text-2xl mb-2"></i>
                         <p>Social Media Marketing</p>
                     </div>
+                    <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                        <i class="fas fa-mobile-alt text-primary text-2xl mb-2"></i>
+                        <p>Flutter/Dart</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                        <i class="fab fa-laravel text-primary text-2xl mb-2"></i>
+                        <p>Laravel</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                        <i class="fab fa-react text-primary text-2xl mb-2"></i>
+                        <p>React</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                        <i class="fab fa-js text-primary text-2xl mb-2"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                        <i class="fas fa-code text-primary text-2xl mb-2"></i>
+                        <p>REST APIs</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                        <i class="fas fa-database text-primary text-2xl mb-2"></i>
+                        <p>PostgreSQL</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                        <i class="fas fa-fire text-primary text-2xl mb-2"></i>
+                        <p>Firebase</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                        <i class="fas fa-server text-primary text-2xl mb-2"></i>
+                        <p>DevOps</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                        <i class="fab fa-git-alt text-primary text-2xl mb-2"></i>
+                        <p>Git</p>
+                    </div>
                 </div>
             </section>
 
@@ -1125,6 +1271,20 @@
                     <div
                         class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
                         <div class="bg-primary text-white p-4">
+                            <h3 class="text-xl font-semibold">Soliya</h3>
+                        </div>
+                        <div class="p-6">
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <i class="fas fa-certificate text-primary mr-2"></i>
+                                    Connect Program Certificate (2023)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <div class="bg-primary text-white p-4">
                             <h3 class="text-xl font-semibold">University of Benghazi</h3>
                         </div>
                         <div class="p-6">
@@ -1132,6 +1292,34 @@
                                 <li class="flex items-center">
                                     <i class="fas fa-certificate text-primary mr-2"></i>
                                     3D Design & Printing Certification
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <div class="bg-primary text-white p-4">
+                            <h3 class="text-xl font-semibold">First Global Challenge</h3>
+                        </div>
+                        <div class="p-6">
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <i class="fas fa-certificate text-primary mr-2"></i>
+                                    Certificate of Excellence (2022)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <div class="bg-primary text-white p-4">
+                            <h3 class="text-xl font-semibold">FIRST Championship</h3>
+                        </div>
+                        <div class="p-6">
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <i class="fas fa-certificate text-primary mr-2"></i>
+                                    Certificate of Achievement (2023, BAE Systems)
                                 </li>
                             </ul>
                         </div>
